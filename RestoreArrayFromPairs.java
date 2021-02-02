@@ -19,7 +19,6 @@ class Solution {
             visited.add(val);
             result[i++] = val;
             if (map.containsKey(val)) {
-                System.out.println(" Adding Value " + map.get(val));
                 List<Integer> c = map.get(val);
                 for ( int e : c) {
                     if (!visited.contains(e)) {
